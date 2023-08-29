@@ -1,0 +1,103 @@
+header {
+    height: 100px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header > h1 {
+    color: rgb(48, 48, 48);
+}
+#navbar-pc {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 400px;
+    float: right;
+    height: 50px;
+    column-gap: 15px;
+}
+#encontrar-emprego {
+    height: 800px;
+    background-color: rgb(27, 27, 27);
+}
+
+#procurar-emprego {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 800px;
+}
+#procurar-emprego > h2 {
+    margin-top: 150px;
+    color: white;
+    font-size: 3em;
+}
+#procurar-emprego > p {
+    margin-top: 50px;
+    color: white;
+    font-size: 1.8em;
+}
+#btn {
+    margin-top: 110px;
+}
+#btn > input {
+    height: 50px;
+    width: 500px;
+}
+#btn > button {
+    height: 50px;
+    border-radius: 0px;
+    margin-bottom: 5px;
+}
+
+#empregos > .row > .col-12 {
+    text-align: center;
+}
+#empregos > .row > .col-12 > ul > #lista-nova {
+    background-color: rgb(243, 243, 88);
+}
+#empregos > .row > .col-12 > ul > li {
+    list-style-type: none;
+    background-color: rgb(243, 243, 138);
+    border: 1px solid black;
+    justify-content: space-around;
+    height:200px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    padding-left: 70px;
+    margin:15px;
+}
+#ver {
+    position: absolute;
+    right: 10px;
+    top: 80px;
+    height: 50px;
+    width: 200px;
+    font-size: 1.4em;
+}
+img {
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: -49px;
+    top: 47px;
+
+}
+.Nova-vaga {
+    background-color: orange;
+    width: 200px;
+    height: 50px;
+    font-size: 1.3em;
+    color: white;
+    line-height: 45px;
+}
+#Nova {
+    background-color:aqua;
+}

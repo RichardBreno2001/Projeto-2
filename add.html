@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="estilos/css/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous" defer></script>
+    <title>Projeto 2</title>
+</head>
+<body>
+    <header>
+        <h1>Job Finder</h1>
+        <div id="navbar-pc" >
+            <a href="index.html #empregos" class="btn" style="line-height: 35px;">Ver vagas</a>
+            <button type="button" class="btn btn-primary">Abrir vaga</button>
+        </div>
+    </header>
+    <div class="container" id="add">
+        <div class="row">
+            <div class="col-12">
+                <div class="col-12" style="margin-top: 50px;">
+                    <h1 style="font-size: 1.7em;">Divulgue a vaga preenchendo o campo</h1>
+                </div>
+                <div class="col-12">
+                    <form action="" autocomplete="off">
+                        <label for="title" class="form-label">Título da vaga</label>
+                        <input type="text" id="title" class="form-control" style="width: 400px;">
+                        <label for="desc" class="form-label">Descrição da vaga</label>
+                        <textarea name="desc" id="desc" class="form-control" cols="30" rows="10"></textarea>
+                        <label for="salary" class="form-label">Salário</label>
+                        <div class="input-group" style="width: 500px;">
+                            <span class="input-group-text">
+                                R$
+                            </span>
+                            <input type="number" id="salary" class="form-control" min="0">
+                            <span class="input-group-text">
+                                ,00
+                            </span>
+                        </div>
+                        <label for="email" class="form-label">Email:</label>
+                        <input type="email" id="email" class="form-control" style="width: 500px;">
+                        <button type="submit" class="btn btn-primary" style="margin-top: 25px; margin-bottom: 35px;">Adicionar vaga</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
