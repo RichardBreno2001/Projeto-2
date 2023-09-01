@@ -1,9 +1,9 @@
 const express = require('express')
 const router = express.Router()
-const jobs = require('../model/jobs')
+const jobs = require('../model/ObjetoModel')
 
 router.get('/add',(req,res)=>{
-    res.send('DEU CERTO')
+    res.render('add')
 })
 
 router.post('/add',(req,res)=>{

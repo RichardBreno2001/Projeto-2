@@ -57,7 +57,7 @@ header > h1 {
 #empregos > .row > .col-12 {
     text-align: center;
 }
-#empregos > .row > .col-12 > ul > #lista-nova {
+#empregos > .row > .col-12 > ul > .lista-nova {
     background-color: rgb(243, 243, 88);
 }
 #empregos > .row > .col-12 > ul > li {

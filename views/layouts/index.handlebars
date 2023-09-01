@@ -21,35 +21,16 @@
                 <div class="col-12">
                     <h2>Veja nossas vagas em destaque</h2>
                     <ul>
-                        <li id="lista-nova">
+                        {{#each dados}}
+                        <li class=" {{#if dataValues.new_job}}lista-nova{{/if}}">
                             <img src="/1590898.png" alt="imagem">
-                            <p>Empresa</p>
-                            <h2>Título da vaga</h2>
-                            <p>R$2000,00</p>
+                            <p>{{dataValues.company}}</p>
+                            <h2>{{dataValues.title}}</h2>
+                            <p>{{dataValues.salary}}</p>
                             <span class="Nova-vaga">Nova</span>
                             <a href="#" class="btn btn-primary" id="ver">Ver vaga</a>
                         </li>
-                        <li>
-                            <img src="/1590898.png" alt="imagem">
-                            <p>Empresa</p>
-                            <h2>Título da vaga</h2>
-                            <p>R$2000,00</p>
-                            <a href="#" class="btn btn-primary" id="ver">Ver vaga</a>
-                        </li>
-                        <li>
-                            <img src="/1590898.png" alt="imagem">
-                            <p>Empresa</p>
-                            <h2>Título da vaga</h2>
-                            <p>R$2000,00</p>
-                            <a href="#" class="btn btn-primary" id="ver">Ver vaga</a>
-                        </li>
-                        <li>
-                            <img src="/1590898.png" alt="imagem">
-                            <p>Empresa</p>
-                            <h2>Título da vaga</h2>
-                            <p>R$2000,00</p>
-                            <a href="#" class="btn btn-primary" id="ver">Ver vaga</a>
-                        </li>
+                        {{/each}}
                     </ul>
                 </div>
             </div>

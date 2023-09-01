@@ -2,10 +2,24 @@ const express = require('express')
 const app   = express()
 const db = require('./db/conection')
 const bodyParser = require('body-parser')
+const jobs = require('./model/ObjetoModel')
 //ROTAS
 
 app.get('/',(req,res)=>{
-    res.render('layouts')
+    jobs.findAll({
+        order:[
+            ['createdAt','DESC']
+        ]
+    })
+    .then((dados)=>{
+        res.render('layouts',{
+            dados
+        })
+    })
+    .catch(erro=>{
+        console.log('Ocorreu um erro' + erro)
+    })
+    
 })
 
 app.listen(5000,function(){
